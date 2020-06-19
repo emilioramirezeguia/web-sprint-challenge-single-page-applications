@@ -2,14 +2,15 @@ import React from "react";
 import "../App.css";
 
 function Form(props) {
-    const { form, handleChange, handleCheckbox } = props;
+    const { form, handleChange, handleCheckbox, handleSubmit, disabled, errors } = props;
 
     return (
         <>
             <div className="formDiv">
                 <h2>Build your own pizza</h2>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="formGroup">
+                        <div style={{ color: "red" }}>{errors.name}</div>
                         <h3>Who should we send this to?</h3>
                         <input
                             type="text"
@@ -74,6 +75,7 @@ function Form(props) {
                             onChange={handleChange}
                         />
                     </div>
+                    <button disabled={disabled}>Add to order</button>
                 </form>
             </div>
         </>
