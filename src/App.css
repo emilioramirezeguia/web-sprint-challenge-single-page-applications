@@ -1,3 +1,5 @@
+/* === HOME === */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -59,41 +61,30 @@ h1 {
   text-decoration: underline;
 }
 
-/* .App {
-  text-align: center;
+/* === FORM COMPONENT === */
+
+.formDiv {
+  padding: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formDiv h2 {
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formGroup {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.formGroup h3, input {
+  margin: 2% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.formGroup h3 {
+  font-size: 1.5rem;
+}
+
+.formGroup label {
+  font-size: 1.2rem;
+}
